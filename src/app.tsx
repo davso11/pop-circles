@@ -104,7 +104,7 @@ export const App = () => {
           variant="destructive"
           tooltip="Refresh"
           tooltipAlign="end"
-          disabled={noCoordinates}
+          disabled={noCoordinates && noItemInStack}
           onClick={(e) => {
             e.stopPropagation();
             resetAudio.play();
