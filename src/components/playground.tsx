@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { cn } from '@/lib/utils';
 
-type PlaygroundProps = React.ComponentProps<'div'>;
+type PlaygroundProps = React.ComponentPropsWithRef<'div'>;
 
 export const Playground = forwardRef<HTMLDivElement, PlaygroundProps>(
   ({ className, ...props }, ref) => {
